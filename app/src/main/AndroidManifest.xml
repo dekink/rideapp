@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lecture.mobile.final_project.ma01_20141029" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo5"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDEdyEGjF4Mye_ZCT5hoGjANPbPwv2OWlE"
+            />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name="lecture.mobile.final_project.ma01_20141029.MainActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="@string/kakao_scheme"
+                    android:host="@string/kakaolink_host"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="lecture.mobile.final_project.ma01_20141029.SearchActivity">
+        </activity>
+        <activity android:name="lecture.mobile.final_project.ma01_20141029.RideActivity">
+        </activity>
+        <activity android:name="lecture.mobile.final_project.ma01_20141029.ParkMapActivity">
+        </activity>
+        <activity android:name="lecture.mobile.final_project.ma01_20141029.MypageActivity"></activity>
+        <activity android:name="lecture.mobile.final_project.ma01_20141029.AlarmActivity"></activity>
+        <activity android:name="lecture.mobile.final_project.ma01_20141029.MemoActivity"></activity>
+        <activity android:name="lecture.mobile.final_project.ma01_20141029.RecordActivity"></activity>
+        <activity android:name="lecture.mobile.final_project.ma01_20141029.AlarmReceiver$AlarmEndActivity"></activity>
+        <receiver android:name="lecture.mobile.final_project.ma01_20141029.AlarmReceiver"></receiver>
+    </application>
+
+</manifest>

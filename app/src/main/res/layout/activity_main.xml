@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white">
+
+    <Button
+        android:text="검색"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMSearch"
+        android:background="@drawable/btnfirst"
+        android:textSize="15dp"
+        android:onClick="onClick"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="27dp" />
+
+    <Button
+        android:text="Mypage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMypage"
+        android:background="@drawable/btnend"
+        android:textSize="15dp"
+        android:onClick="onClick"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/btnMBoard"
+        android:layout_alignLeft="@+id/btnMBoard"
+        android:layout_alignStart="@+id/btnMBoard" />
+
+    <Button
+        android:text="Ride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMBoard"
+        android:background="@drawable/btnmiddle"
+        android:textSize="15dp"
+        android:onClick="onClick"
+        android:layout_marginTop="68dp"
+        android:layout_alignTop="@+id/btnMSearch"
+        android:layout_alignLeft="@+id/btnMSearch"
+        android:layout_alignStart="@+id/btnMSearch" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boardwww"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/imageView7"
+        android:layout_above="@+id/btnMypage"
+        android:layout_toLeftOf="@+id/btnMSearch"
+        android:layout_toStartOf="@+id/btnMSearch" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boardwww2"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_toRightOf="@+id/btnMSearch"
+        android:layout_toEndOf="@+id/btnMSearch"
+        android:id="@+id/imageView9" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boardwww"
+        android:layout_below="@+id/btnMSearch"
+        android:layout_toLeftOf="@+id/btnMypage"
+        android:layout_toStartOf="@+id/btnMypage"
+        android:layout_marginTop="33dp"
+        android:id="@+id/imageView10" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boardwww2"
+        android:layout_alignTop="@+id/imageView10"
+        android:layout_toRightOf="@+id/btnMypage"
+        android:layout_toEndOf="@+id/btnMypage"
+        android:id="@+id/imageView11" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnMypage">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bike3"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnRecord"
+                android:onClick="onClick" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

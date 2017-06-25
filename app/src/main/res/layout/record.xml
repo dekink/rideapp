@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/recordbg2"
+        android:id="@+id/imageView15"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSpeed"
+        android:layout_alignBottom="@+id/imageView13"
+        android:layout_toRightOf="@+id/imageView13"
+        android:layout_toEndOf="@+id/imageView13" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRidingTime"
+        android:layout_alignBaseline="@+id/tvDistance"
+        android:layout_alignBottom="@+id/tvDistance"
+        android:layout_toRightOf="@+id/imageView8"
+        android:layout_toEndOf="@+id/imageView8" />
+
+    <TextView
+        android:text="startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:id="@+id/tvStartTime"
+        android:textSize="24dp"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/imageView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time"
+        android:id="@+id/imageView8"
+        android:layout_marginBottom="42dp"
+        android:layout_alignBottom="@+id/imageView15"
+        android:layout_alignLeft="@+id/tvStartTime"
+        android:layout_alignStart="@+id/tvStartTime" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDistance"
+        android:layout_alignBottom="@+id/imageView13"
+        android:layout_toRightOf="@+id/imageView12"
+        android:layout_toEndOf="@+id/imageView12" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ditance1"
+        android:id="@+id/imageView12"
+        android:layout_alignBottom="@+id/imageView8"
+        android:layout_toRightOf="@+id/tvRidingTime"
+        android:layout_toEndOf="@+id/tvRidingTime" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/speed1"
+        android:id="@+id/imageView13"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/tvStartTime"
+        android:layout_toRightOf="@+id/tvDistance"
+        android:layout_toEndOf="@+id/tvDistance" />
+
+</RelativeLayout>

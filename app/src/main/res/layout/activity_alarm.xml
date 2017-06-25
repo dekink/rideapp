@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/alarm1">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calendar"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="32dp"
+        android:id="@+id/btndate"
+        android:layout_below="@+id/btnSetalarm"
+        android:layout_toLeftOf="@+id/btnSetalarm"
+        android:layout_toStartOf="@+id/btnSetalarm"
+        android:onClick="onRClick" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alarmtime"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:id="@+id/btnTime"
+        android:layout_alignTop="@+id/btndate"
+        android:layout_toRightOf="@+id/btnSetalarm"
+        android:layout_toEndOf="@+id/btnSetalarm"
+        android:onClick="onRClick" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cancle3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp"
+        android:id="@+id/btnAlarmStop"
+        android:onClick="onRClick" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Alarm Title"
+        android:ems="10"
+        android:id="@+id/etAlarmTitle"
+        android:layout_marginTop="93dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alarmset"
+        android:layout_marginTop="85dp"
+        android:id="@+id/btnSetalarm"
+        android:onClick="onRClick"
+        android:layout_below="@+id/etAlarmTitle"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

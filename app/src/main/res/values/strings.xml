@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ride</string>
+    <!--<string name="apiURL">http://openAPI.seoul.go.kr:8088/6859456b416b696d39356b4e655562/xml/SearchParkInfoService/1/5/</string>-->
+    <string name="apiURL">http://openAPI.seoul.go.kr:8088/74694869756b696d36317568484b6f/xml/SearchParkInformationByAddressService/1/5/</string>
+    <string name="kakao_app_key">e8b29a6d6150fe088b59ec85017447bd</string>
+    <string name="kakao_scheme">kakaoe8b29a6d6150fe088b59ec85017447bd</string>
+    <string name="kakaolink_host">kakaolink</string>
+
+</resources>
